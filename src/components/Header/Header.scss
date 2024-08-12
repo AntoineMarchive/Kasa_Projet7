@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    &__fig {
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        width: 9rem;
+
+    img {
+        width: 100%;
+        }
+    }
+}
