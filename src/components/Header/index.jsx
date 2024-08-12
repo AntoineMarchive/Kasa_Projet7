@@ -1,10 +1,13 @@
 import './Header.scss';
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.svg';
 
-export function Header() {
+export function Header () {
     return (
-        <header>
-       <p>je suis le header</p>
-       </header>
+        <header className="header">
+            <figure className="header__fig">
+                <img src={logo} alt="Logo de l'agence immobilière Kasa"/>
+            </figure>
+            <Nav />
+        </header>
     )
 }
