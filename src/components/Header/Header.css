@@ -12,4 +12,8 @@
 }
 .header__fig img {
   width: 100%;
+}
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
 }/*# sourceMappingURL=Header.css.map */
