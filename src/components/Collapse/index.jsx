@@ -1,6 +1,6 @@
 import 'Collapse.scss'
 
-function Collapse ({ content, title }) {
+ export function Collapse ({ content, title }) {
     const [isOpen, setIsOpen] = useState(false);
     const display = () => {
         setIsOpen(!isOpen);
@@ -19,5 +19,3 @@ function Collapse ({ content, title }) {
         </div>
     )
 }
-
-export default Collapse;
