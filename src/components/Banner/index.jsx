@@ -1,7 +1,7 @@
 import './Banner.scss';
 import logo from "../../assets/homeBanner.png";
 
-function Banner({ image, text }) {
+function Banner() {
     return (
         <div className="banner">
             <img className="banner__img" src={logo} alt="Bannière" />
