@@ -10,7 +10,7 @@ banner {
         width: 100%;
     }
     &__darken {
-        background-color: $background-color;
+        background-color: rgba(0, 0, 0, 0.3);
         width: 100%;
         height: 100%;
         border-radius: 25px;
@@ -29,7 +29,7 @@ banner {
         font-size: 24px;
         font-weight: 500;
         line-height: 100%;
-        color: $tertiary-color;
+        color: #ffffff;
         width: 217px;
         height: 48px;
     }
