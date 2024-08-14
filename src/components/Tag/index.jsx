@@ -1,9 +1,9 @@
-import './Import.scss'
+import "./Import.scss";
 
 function Tag({ Text }) {
-    return (
+  return (
     <tag className="tag">
-        <button> {Text}</button>
+      <button> {Text}</button>
     </tag>
-    )
+  );
 }
