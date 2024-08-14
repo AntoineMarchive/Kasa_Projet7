@@ -1,5 +1,5 @@
 import "./Banner.scss";
-import logo from "../../assets/homeBanner.png";
+import Logo from '../../assets/homeBanner.png';
 
 export function Banner({ logo, text }) {
   return (

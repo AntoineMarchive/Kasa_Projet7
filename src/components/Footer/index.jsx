@@ -4,7 +4,6 @@ import logo from "../../assets/footerLogo.png";
 export function Footer() {
   return (
     <footer className="footer">
-      <p>ici est le footer</p>
       <img
         className="footer__logo"
         src={logo}
