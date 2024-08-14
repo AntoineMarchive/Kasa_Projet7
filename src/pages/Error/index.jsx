@@ -4,6 +4,7 @@ import { Footer } from "../../components/Footer"
 export function Error() {
     return (
         <main>
+            <h1>Error page</h1>
             <Header></Header>
         <div className="error">
             <p className="error__number">404</p>

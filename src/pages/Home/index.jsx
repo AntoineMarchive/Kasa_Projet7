@@ -8,10 +8,10 @@ import './Home.scss';
 export function Home() {
     return (
         <main>
+            <h1>Page Home</h1>
             <Header></Header>
             <Banner></Banner>
             <Thumb></Thumb>
-            <h1>Page Home</h1>
             <Footer></Footer>
         </main>
     )
