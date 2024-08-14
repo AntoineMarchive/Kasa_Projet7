@@ -1,5 +1,6 @@
 import "./Thumb.scss";
 
+
 export function Thumb() {
   return (
     <div className="thumb">
