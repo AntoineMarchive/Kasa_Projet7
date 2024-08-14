@@ -20,17 +20,13 @@
     top: 0;
   }
   &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 38%;
-    left: 5.6%;
     right: 32.53%;
-    bottom: 80.05%;
-    font-style: Medium;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 100%;
+    font-size: 30px;
     color: #ffffff;
-    width: 217px;
-    height: 48px;
   }
 }
