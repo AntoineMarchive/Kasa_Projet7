@@ -1,12 +1,16 @@
 .thumb {
   width: 340px;
   height: 340px;
-  border-radius: 15%;
+  border-radius: 15px;
   background-color: red;
   &__title {
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-end;
     color: #ffffff;
     box-sizing: inherit;
+    margin-left: 10px;
   }
 }

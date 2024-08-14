@@ -12,6 +12,11 @@ export function Home() {
             <Header></Header>
             <Banner></Banner>
             <Thumb></Thumb>
+            <Thumb></Thumb>
+            <Thumb></Thumb>
+            <Thumb></Thumb>
+            <Thumb></Thumb>
+            <Thumb></Thumb>
             <Footer></Footer>
         </main>
     )
