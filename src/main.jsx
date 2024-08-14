@@ -5,9 +5,11 @@ import { Home } from './pages/Home'
 //import { Logement } from './pages/Logement'
 //import { About } from './pages/About'
 import './index.scss'
+import { RouterProvider } from 'react-router-dom'
+import router from './Router'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Home></Home>
+    <RouterProvider router={router} />
   </StrictMode>,
-)
+);
