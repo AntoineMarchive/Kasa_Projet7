@@ -7,8 +7,10 @@ export function Header() {
       <figure className="header__fig">
         <img src={logo} alt="Logo de l'agence immobilière Kasa" />
       </figure>
-      <nav>Acceuil</nav>
-      <nav>A propos</nav>
+      <div className="header__nav">
+        <nav>Acceuil</nav>
+        <nav>A propos</nav>
+      </div>
     </header>
   );
 }
