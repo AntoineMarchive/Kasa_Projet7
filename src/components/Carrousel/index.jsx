@@ -1,6 +1,6 @@
-import "./Caroussel.scss";
+import "./Carrousel.scss";
 
-export function Caroussel() {
+export function Carrousel() {
     return (
         <main>
             <h1>Caroussel</h1>

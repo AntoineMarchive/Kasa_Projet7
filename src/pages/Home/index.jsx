@@ -1,23 +1,29 @@
-import { Header } from '../../components/Header';
-import { Footer } from '../../components/Footer';
+import { useEffect, useState } from 'react';
 import { Banner } from '../../components/Banner';
 import { Thumb } from '../../components/Thumb';
 import './Home.scss';
 
+export default function Home() {
+    const [logements, setLogements] = useState([]) //hook de react//
 
-export function Home() {
+    useEffect (() => {
+        async function fetchLogements() {
+            const res = await fetch('/logements.json');
+            const datas = await res.json();
+            setLogements(datas);
+        }
+
+        fetchLogements();
+    }, []);
+
     return (
         <main>
             <h1>Page Home</h1>
-            <Header></Header>
-            <Banner></Banner>
-            <Thumb></Thumb>
-            <Thumb></Thumb>
-            <Thumb></Thumb>
-            <Thumb></Thumb>
-            <Thumb></Thumb>
-            <Thumb></Thumb>
-            <Footer></Footer>
+            <section className="thumbs">
+                {
+                    logements.map(logement => <Thumb key={logement.id}  />)
+                }
+            </section>
         </main>
     )
 };

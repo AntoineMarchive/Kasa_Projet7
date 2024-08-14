@@ -1,6 +1,6 @@
-import "./Import.scss";
+import "./Tag.scss";
 
-function Tag({ Text }) {
+export function Tag({ Text }) {
   return (
     <tag className="tag">
       <button> {Text}</button>
