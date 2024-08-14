@@ -11,6 +11,9 @@ export function About() {
             <Header></Header>
             <Banner></Banner>
             <Collapse></Collapse>
+            <Collapse></Collapse>
+            <Collapse></Collapse>
+            <Collapse></Collapse>
             <Footer></Footer>
         </main>
     )
