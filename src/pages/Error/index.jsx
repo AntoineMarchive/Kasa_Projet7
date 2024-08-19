@@ -1,10 +1,10 @@
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
+import './Error.scss';
 
 export function Error() {
   return (
     <main>
-      <h1>Error page</h1>
       <Header></Header>
       <div className="error">
         <p className="error__number">404</p>
