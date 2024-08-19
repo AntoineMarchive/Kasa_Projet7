@@ -1,3 +1,4 @@
+import React from 'react';
 import './Banner.scss';
 import Logo from '../../assets/homeBanner.png';
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import "./Carrousel.scss";
 
 export function Carrousel() {
