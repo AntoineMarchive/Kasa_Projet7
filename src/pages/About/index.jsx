@@ -9,7 +9,6 @@ export function About() {
   return (
     <Layout>
       <main>
-        <h1>Page About</h1>
         <Banner></Banner>
         <Collapse></Collapse>
         <Collapse></Collapse>

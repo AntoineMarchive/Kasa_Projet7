@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 export function Logement() {
   const { logementId } = useParams();
-  const [logement, setLogement] = useState(null);
+  const [logements, setLogements] = useState([]);
 
   useEffect(() => {
     async function fetchLogements() {
