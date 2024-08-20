@@ -3,12 +3,12 @@ import { Collapse } from "../../components/Collapse";
 import { Tag } from "../../components/Tag";
 import { Layout } from "../../components/Layout";
 import "./Logement.scss";
-import { useParams, NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export function Logement() {
   const { logementId } = useParams();
-  const [logement, setLogement] = useState();
+  const [logement, setLogement] = useState(null);
 
   useEffect(() => {
     async function fetchLogements() {
@@ -22,6 +22,7 @@ export function Logement() {
       if(foundLogement) {
         setLogement(foundLogement);
       } else {
+        console.error("Logement non trouvé");
       }
   
     }

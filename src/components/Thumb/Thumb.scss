@@ -1,16 +1,25 @@
 .thumb {
-  width: 340px;
-  height: 340px;
-  border-radius: 15px;
-  background-color: red;
-  &__title {
-    width: 50%;
+  position: relative;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    color: #ffffff;
-    box-sizing: inherit;
-    margin-left: 10px;
+    min-height: 340px;
+    border-radius: 10px;
+    list-style: none;
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
   }
+  &__title {
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 50%;
+  }
+}
+
+.thumb:hover {
+  cursor: pointer;
 }

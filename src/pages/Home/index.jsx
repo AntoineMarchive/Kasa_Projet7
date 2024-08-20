@@ -30,9 +30,7 @@ export function Home() {
   return (
     <Layout>
       <main>
-        <section>
           <Banner />
-        </section>
         <section className="thumb">
           {logements.length > 0 ? (
             logements.map((logement) => (
