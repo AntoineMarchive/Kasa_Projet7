@@ -1,0 +1,11 @@
+@import '../../utils/variables.scss';
+
+.star {
+    color: grey;
+    font-size: 35px;
+
+    &.active {
+        color: $primary-color;
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,8 @@
+.star {
+  color: grey;
+  font-size: 35px;
+}
+.star.active {
+  color: #ff6060;
+  font-size: 35px;
+}/*# sourceMappingURL=Star.css.map */
