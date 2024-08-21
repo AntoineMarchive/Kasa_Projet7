@@ -1,9 +1,9 @@
 import "./Tag.scss";
 
-export function Tag({ Text }) {
+export function Tag({ label }) {
   return (
     <tag className="tag">
-      <button> {Text}</button>
+      <button> {label}</button>
     </tag>
   );
 }

@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 export function Logement() {
   const { logementId } = useParams();
-  const [logement, setLogement] = useState(null);
+  const [logement, setLogement] = useState();
 
   useEffect(() => {
     async function fetchLogements() {
@@ -31,9 +31,8 @@ export function Logement() {
   return (
     <Layout>
       <main>
-        <h1>Page Logement {logementId}</h1>
         <div className="logement-container">
-          <Carrousel />
+          <Carrouse />
           <div className="logement-container-additionelle">
             <div className="logement-container-additionelle-info">
               <h2 className="logement-container-additionelle-info__title">
@@ -50,6 +49,8 @@ export function Logement() {
             </div>
           </div>
         </div>
+
+
 
         <div className="collapse-container">
           <Collapse title="Description" className="collapse">
