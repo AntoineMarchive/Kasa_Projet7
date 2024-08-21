@@ -8,16 +8,14 @@ import { useEffect, useState } from "react";
 
 export function Logement() {
   const { logementId } = useParams();
-  const [logement, setLogement] = useState();
+  const [logement, setLogement] = useState(null);
 
   useEffect(() => {
     async function fetchLogements() {
       const res = await fetch("/logements.json");
       const datas = await res.json();
 
-      const foundLogement = datas.find((log) => {
-        return log.id === logementId;
-      });
+      const foundLogement = datas.find((log) => log.id === logementId);
 
       if (foundLogement) {
         setLogement(foundLogement);
@@ -28,11 +26,15 @@ export function Logement() {
     fetchLogements();
   }, [logementId]);
 
+  
+  if (!logement) {
+    return <p>Chargement...</p>; // Pour gérer le cas où logement est null
+  }
+
   return (
     <Layout>
       <main>
         <div className="logement-container">
-          <Carrouse />
           <div className="logement-container-additionelle">
             <div className="logement-container-additionelle-info">
               <h2 className="logement-container-additionelle-info__title">
@@ -42,15 +44,27 @@ export function Logement() {
                 {logement.location}
               </p>
               <div className="tag">
-                {logement.tags.map((tag) => {
-                  <tag key={tag} label={tag} />;
-                })}
+                {logement.tags.map((tag) => (
+                  <Tag key={tag} label={tag} />
+                ))}
               </div>
             </div>
           </div>
         </div>
 
-
+        <div className="additional-info">
+          <div className="host-info">
+            <div className="host-name-container">
+              <p>{logement.host.name.split(" ")[0]}</p>
+              <p>{logement.host.name.split(" ")[1]}</p>
+            </div>
+            <img
+              src={logement.host.picture}
+              alt={logement.host.name}
+              className="host-picture"
+            />
+          </div>
+        </div>
 
         <div className="collapse-container">
           <Collapse title="Description" className="collapse">
@@ -58,9 +72,9 @@ export function Logement() {
           </Collapse>
           <Collapse title="Equipements" className="collapse">
             <ul>
-              {logement.equipments.map((equipment, index) => {
-                <li key={index}>{equipment}</li>;
-              })}
+              {logement.equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
             </ul>
           </Collapse>
         </div>
