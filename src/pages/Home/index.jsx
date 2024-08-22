@@ -30,8 +30,10 @@ export function Home() {
   return (
     <Layout>
       <main>
-          <Banner />
-        <section className="thumb">
+          <Banner>
+            <h1>Chez vous, partout et ailleurs</h1>
+          </Banner>
+        <section className="thumbs">
           {logements.length > 0 ? (
             logements.map((logement) => (
               <Link key={logement.id} to={"/logement/" + logement.id}>
@@ -44,5 +46,5 @@ export function Home() {
         </section>
       </main>
     </Layout>
-  );
+  );  
 }
