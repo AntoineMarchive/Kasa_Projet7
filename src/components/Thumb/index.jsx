@@ -4,9 +4,9 @@ import "./Thumb.scss";
 
 export function Thumb({ cover, title }) {
   return (
-    <li className="thumb">
-      <img className="thumb__image" src={cover} alt={cover} ></img>
+    <article className="thumb">
+      <img className="thumb__image" src={cover} alt={title} ></img>
       <h2 className="thumb__title"> {title}</h2>
-    </li>
+    </article>
   );
 }
