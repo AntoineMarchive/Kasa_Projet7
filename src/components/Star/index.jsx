@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function getColorForRating(rating) {
+function getColorForRating(rating) {
     if (rating >= 1) return 'active';
     return '';
 }
