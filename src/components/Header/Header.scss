@@ -5,25 +5,44 @@
   margin: 5%;
 
   //@media screen and (min-width: $breakpoint-desktop) {
-	//	margin: 40px 100px 49px 100px;
-	//}
+  //	margin: 40px 100px 49px 100px;
+  //}
   &__fig {
-
     display: flex;
     align-items: flex-start;
     margin: 0;
     width: 9rem;
     //@media screen and (min-width: $breakpoint-desktop) {
-		//	width: 13.2rem;
-		//}
+    //	width: 13.2rem;
+    //}
 
     img {
-      width: 100%;
+      width: 210px;
+      height: 68px;
     }
   }
   &__nav {
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    align-items: center;
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      margin: 0;
+    }
+    li {
+      width: 136px;
+      color: #000;
+      text-align: right;
+      font-family: Montserrat, sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    li:active,
+    li:hover {
+      text-decoration-line: underline;
+    }
   }
 }
