@@ -3,13 +3,13 @@ import { Collapse } from "../../components/Collapse";
 import { Tag } from "../../components/Tag";
 import { Layout } from "../../components/Layout";
 import "./Logement.scss";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export function Logement() {
   const { logementId } = useParams();
   const [logement, setLogement] = useState(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     async function fetchLogements() {
       const res = await fetch("/logements.json");
@@ -21,12 +21,12 @@ export function Logement() {
         setLogement(foundLogement);
       } else {
         console.error("Logement non trouvé");
+        navigate("/logement-non-trouvé");
       }
     }
     fetchLogements();
-  }, [logementId]);
+  }, [logementId, navigate]);
 
-  
   if (!logement) {
     return <p>Chargement...</p>; // Pour gérer le cas où logement est null
   }
