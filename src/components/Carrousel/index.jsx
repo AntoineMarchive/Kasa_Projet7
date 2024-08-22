@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Carrousel.scss';
 
-export function Caroussel({ images }) {
+export function Carrousel({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {

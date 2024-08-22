@@ -2,9 +2,9 @@ import { Carrousel } from "../../components/Carrousel";
 import { Collapse } from "../../components/Collapse";
 import { Tag } from "../../components/Tag";
 import { Layout } from "../../components/Layout";
-import "./Logement.scss";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import "./Logement.scss";
 
 export function Logement() {
   const { logementId } = useParams();
@@ -34,6 +34,7 @@ export function Logement() {
   return (
     <Layout>
       <main>
+        <Carrousel></Carrousel>
         <div className="logement-container">
           <div className="logement-container-additionelle">
             <div className="logement-container-additionelle-info">
