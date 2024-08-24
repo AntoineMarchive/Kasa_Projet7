@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./Collapse.scss";
 
-export function Collapse({ content, title }) {
+export function Collapse({ children, title }) {
   const [isOpen, setIsOpen] = useState(false);
   const display = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div>
+    <header className="collapse">
       <div className="collapse__dropdown__title">
         <h2>{title}</h2>
         <p onClick={display}>
@@ -19,8 +19,8 @@ export function Collapse({ content, title }) {
         </p>
       </div>
       <div className="collapse__dropdown__content">
-        {isOpen && <div>{content}</div>}
+        {isOpen && <div>{children}</div>}
       </div>
-    </div>
+    </header>
   );
 }

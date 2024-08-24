@@ -34,7 +34,7 @@ export function Logement() {
   return (
     <Layout>
       <main>
-        <Carrousel></Carrousel>
+        <Carrousel images={logement.pictures} />
         <div className="logement-container">
           <div className="logement-container-additionelle">
             <div className="logement-container-additionelle-info">

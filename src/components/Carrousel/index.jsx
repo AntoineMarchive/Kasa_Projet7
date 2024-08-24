@@ -17,17 +17,17 @@ export function Carrousel({ images }) {
     };
 
     return (
-        <div className="caroussel">
-            <button className="caroussel__arrow caroussel__arrow--left" onClick={handlePrev}>
+        <div className="carrousel">
+            <button className="carrousel__arrow carrousel__arrow--left" onClick={handlePrev}>
                 <i className="fa-solid fa-chevron-left"></i>
             </button>
-            <div className="caroussel__images">
+            <div className="carrousel__images">
                 <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
             </div>
-            <button className="caroussel__arrow caroussel__arrow--right" onClick={handleNext}>
+            <button className="carrousel__arrow carrousel__arrow--right" onClick={handleNext}>
                 <i className="fa-solid fa-chevron-right"></i>
             </button>
-            <div className="caroussel__count">
+            <div className="carrousel__count">
                 {currentIndex + 1} / {images.length}
             </div>
         </div>

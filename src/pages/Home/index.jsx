@@ -5,6 +5,7 @@ import { Banner } from "../../components/Banner";
 import { Thumb } from "../../components/Thumb";
 import "./Home.scss";
 import { Link } from "react-router-dom";
+import image from '../../assets/homeBanner.png';
 
 export function Home() {
   const [logements, setLogements] = useState([]); //hook de react//
@@ -30,7 +31,7 @@ export function Home() {
   return (
     <Layout>
       <main>
-          <Banner>
+          <Banner bannerImage={image} className="banner__img">
             <h1>Chez vous, partout et ailleurs</h1>
           </Banner>
         <section className="thumbs">
