@@ -2,6 +2,7 @@ import { Carrousel } from "../../components/Carrousel";
 import { Collapse } from "../../components/Collapse";
 import { Tag } from "../../components/Tag";
 import { Layout } from "../../components/Layout";
+import { Star } from "../../components/Star";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Logement.scss";
@@ -64,6 +65,7 @@ export function Logement() {
               alt={logement.host.name}
               className="host-picture"
             />
+            <Star rating={parseInt(logement.rating, 10)} />
           </div>
         </div>
 
@@ -83,3 +85,4 @@ export function Logement() {
     </Layout>
   );
 }
+
