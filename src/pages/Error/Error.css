@@ -6,14 +6,16 @@
 .error__number {
   color: #ff6060;
   font-size: 200px;
+  font-weight: 700;
   margin: 50px 0;
 }
 .error__text {
   color: #ff6060;
   margin-top: 65px;
-  font-size: larger;
+  font-size: 34px;
   margin-bottom: 100px;
 }
 .error__link {
   margin: 40px 0 176px 0;
+  border-bottom: 1px solid;
 }/*# sourceMappingURL=Error.css.map */
