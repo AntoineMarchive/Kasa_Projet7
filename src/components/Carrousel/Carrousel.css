@@ -48,4 +48,16 @@
   font-weight: 500;
   text-align: center;
   line-height: 142.6%;
+}
+
+@media (max-width: 768px) {
+  .caroussel {
+    height: 255px;
+  }
+  .caroussel__arrow {
+    font-size: 28px;
+  }
+  .caroussel__count {
+    display: none;
+  }
 }/*# sourceMappingURL=Carrousel.css.map */
