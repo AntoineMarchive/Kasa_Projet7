@@ -9,3 +9,9 @@
     margin-top: 38px;
     margin-bottom: 38px;
 }
+
+@media (max-width: 768px) {
+    .Collapse-container {
+        width: 100%;
+    }
+}
