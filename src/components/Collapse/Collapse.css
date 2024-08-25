@@ -1,7 +1,24 @@
 .collapse {
   display: flex;
-  width: 100%;
-  margin: 20px 0;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #ff6060;
+  color: #fff;
+  border-radius: 5px;
+}
+.collapse__dropdown__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.collapse__dropdown__content {
+  justify-content: space-between;
 }/*# sourceMappingURL=Collapse.css.map */
