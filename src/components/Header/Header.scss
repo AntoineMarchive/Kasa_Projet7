@@ -6,7 +6,6 @@
   width: 100%;
   padding: 45px 5% 50px 5%;
 
-
   &__fig {
     display: flex;
     align-items: flex-start;
@@ -42,6 +41,14 @@
   }
 }
 
+.header__nav a {
+  text-decoration: none;
+  color: unset;
+}
+
+.header__nav a:active, .header__nav a:hover {
+  text-decoration-line: underline;
+}
 @media only screen and (max-width: 768px) {
   .header {
     padding: 20px 5% 19px 5%;
