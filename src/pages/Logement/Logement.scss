@@ -3,13 +3,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 50px;
   &-additionelle {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: flex-start;
-    margin-bottom: 20px;
+    
     &-info {
       flex: 1;
       margin-right: 20px;
@@ -78,7 +77,7 @@
   justify-content: space-between;
   gap: 76px;
   width: 100%;
-  margin-top: 24px;
+  margin-top: 10px;
   border-radius: 10px;
   .collapse {
     flex: 1;
