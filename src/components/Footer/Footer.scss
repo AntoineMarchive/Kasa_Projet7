@@ -21,3 +21,16 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .footer {
+      padding: 66px 115px 58px 117px;
+      &__logo {
+          margin-bottom: 8px;
+      }
+      &__copyright {
+          font-size: 12px;
+          font-weight: 500;
+      }
+  }
+}
