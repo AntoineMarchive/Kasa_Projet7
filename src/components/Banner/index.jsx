@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Banner.scss';
 
 export function Banner({ bannerImage, children }) {
@@ -10,3 +11,8 @@ export function Banner({ bannerImage, children }) {
     </div>
   );
 }
+
+Banner.propTypes = {
+  bannerImg: PropTypes.string.isRequired,
+  text: PropTypes.string,
+};
