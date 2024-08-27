@@ -9,3 +9,12 @@
         font-size: 35px;
     }
 }
+
+@media (max-width: 768px) {
+    .star{
+        font-size: 18px;
+        &.active {
+            font-size: 18px;
+        }
+    }
+}
