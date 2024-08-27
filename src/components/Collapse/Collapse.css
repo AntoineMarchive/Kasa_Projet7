@@ -1,24 +1,78 @@
-.collapse {
+.collapse-container {
+  width: 100%;
+}
+.collapse-container .collapse {
+  width: 100%;
+}
+.collapse-container .collapse .collapse__toggle {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   border: none;
   padding: 10px 15px 10px 15px;
   cursor: pointer;
   width: 100%;
-  height: 100%;
   text-align: left;
   font-size: 24px;
-  font-weight: 700;
-  background-color: #ff6060;
+  font-weight: 500;
+  background-color: #FF6060;
   color: #fff;
   border-radius: 5px;
+  z-index: 1;
+  position: relative;
 }
-.collapse__dropdown__title {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.collapse-container .collapse .collapse__icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
-.collapse__dropdown__content {
-  justify-content: space-between;
+.collapse-container .collapse .collapse__toggle.closed .collapse__icon {
+  transform: rotate(0deg);
+}
+.collapse-container .collapse .collapse__toggle.open .collapse__icon {
+  transform: rotate(180deg);
+}
+.collapse-container .collapse .collapse__content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  font-size: 18px;
+  font-weight: 400;
+  max-height: 0;
+  opacity: 0;
+  background-color: rgba(246, 246, 246, 0.45);
+  padding: 0 10px;
+  border-radius: 0 0 4px 4px;
+  margin-top: -6px;
+  padding-bottom: 6px;
+  z-index: 0;
+}
+.collapse-container .collapse .collapse__content.open {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+}
+.collapse-container .collapse .collapse__content.closed {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .collapse-container .collapse .collapse__toggle {
+    padding: 5px 10px 5px 10px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .collapse-container .collapse .collapse__icon {
+    width: 24px;
+    height: 24px;
+  }
+  .collapse-container .collapse .collapse__content {
+    font-size: 12px;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=Collapse.css.map */

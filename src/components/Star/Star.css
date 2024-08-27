@@ -5,4 +5,13 @@
 .star.active {
   color: #ff6060;
   font-size: 35px;
+}
+
+@media (max-width: 768px) {
+  .star {
+    font-size: 18px;
+  }
+  .star.active {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=Star.css.map */

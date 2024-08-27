@@ -51,13 +51,13 @@
 }
 
 @media (max-width: 768px) {
-  .caroussel {
+  .carrousel {
     height: 255px;
   }
-  .caroussel__arrow {
+  .carrousel__arrow {
     font-size: 28px;
   }
-  .caroussel__count {
+  .carrousel__count {
     display: none;
   }
 }/*# sourceMappingURL=Carrousel.css.map */

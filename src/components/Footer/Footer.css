@@ -20,4 +20,17 @@
   justify-content: center;
   color: #ffffff;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 66px 115px 58px 117px;
+  }
+  .footer__logo {
+    margin-bottom: 8px;
+  }
+  .footer__copyright {
+    font-size: 12px;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=Footer.css.map */
