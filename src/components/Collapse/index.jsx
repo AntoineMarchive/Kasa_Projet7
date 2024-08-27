@@ -1,26 +1,35 @@
-import { useState } from "react";
-import "./Collapse.scss";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import './Collapse.scss';
 
-export function Collapse({ children, title }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const display = () => {
-    setIsOpen(!isOpen);
-  };
-  return (
-    <header className="collapse">
-      <div className="collapse__dropdown__title">
-        <h2>{title}</h2>
-        <p onClick={display}>
-          {isOpen ? (
-            <i className="fa-solid fa-chevron-up"></i>
-          ) : (
-            <i className="fa-solid fa-chevron-down"></i>
-          )}
-        </p>
-      </div>
-      <div className="collapse__dropdown__content">
-        {isOpen && <div>{children}</div>}
-      </div>
-    </header>
-  );
+export function Collapse({ title, children }) {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleCollapse = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <header className="collapse-container">
+            <div className="collapse">
+                <button
+                    className={`collapse__toggle ${isOpen ? 'open' : 'closed'}`}
+                    onClick={toggleCollapse}
+                >
+                    {title}
+                    <i
+                        className={`collapse__icon fas fa-chevron-up ${isOpen ? 'open' : 'closed'}`}
+                    ></i>
+                </button>
+                <div className={`collapse__content ${isOpen ? 'open' : 'closed'}`}>
+                    {children}
+                </div>
+            </div>
+        </header>
+    );
 }
+
+Collapse.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
+};
