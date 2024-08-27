@@ -28,6 +28,8 @@ export function Home() {
 
   console.log("logements: ", logements);
 
+// faire un background color sur la version pc, avec container//
+
   return (
     <Layout>
       <main>

@@ -1,6 +1,27 @@
 .thumbs {
+border-radius: 25px;
+background-color: #F6F6F6;
+padding: 50px;
+margin: 50px 0 50px 0;
+
+
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .thumbs{
+      border-radius: 0px;
+      background-color: unset;
+      padding: 0px;
+      margin-top: 27px;
+      margin-bottom: 27px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
 }
