@@ -52,19 +52,18 @@ export function Logement() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="additional-info">
-          <div className="host-info">
-            <div className="host-name-container">
-              <p>{logement.host.name.split(" ")[0]}</p>
-              <p>{logement.host.name.split(" ")[1]}</p>
+          <div className="additional-info">
+            <div className="host-info">
+              <div className="host-name-container">
+                <p>{logement.host.name.split(" ")[0]}</p>
+                <p>{logement.host.name.split(" ")[1]}</p>
+              </div>
+              <img
+                src={logement.host.picture}
+                alt={logement.host.name}
+                className="host-picture"
+              />
             </div>
-            <img
-              src={logement.host.picture}
-              alt={logement.host.name}
-              className="host-picture"
-            />
             <Star rating={parseInt(logement.rating, 10)} />
           </div>
         </div>
@@ -85,4 +84,3 @@ export function Logement() {
     </Layout>
   );
 }
-
