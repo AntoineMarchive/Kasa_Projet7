@@ -13,6 +13,6 @@ export function Banner({ bannerImage, children }) {
 }
 
 Banner.propTypes = {
-  bannerImg: PropTypes.string.isRequired,
+  bannerImage: PropTypes.string.isRequired,
   text: PropTypes.string,
 };
