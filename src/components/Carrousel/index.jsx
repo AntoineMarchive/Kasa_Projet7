@@ -32,7 +32,7 @@ const hasMultipleImages = images.length > 1;
       <div className="carrousel__images">
         <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
       </div>
-      {hasMultipleImages &&(
+      {hasMultipleImages && (
       <button
         className="carrousel__arrow carrousel__arrow--right"
         onClick={handleNext}
